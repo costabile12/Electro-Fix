@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.encabezado {
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.contenedor-principal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contenedor-imagen {
+  height: 120px;
+  padding: 10px 10px 10px 20px;
+  filter: drop-shadow(0 0 4px black);
+  cursor: default;
+}
+.img-logo {
+  height: 100%;
+}
+
+.navegacion-principal {
+  width: 50%;
+}
+
+.navegacion-principal .nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navegacion-principal .nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navegacion-principal .nav-list li:hover {
+  text-shadow: 0 0 6px black;
+}
+
+/* El botón hamburguesa lo dejás oculto por defecto */
+.menu-navegacion {
+  display: none;
+}
+
+/* --- Aquí viene la mejora para el menú desplegable --- */
+
+.contenedor-nav-display {
+  position: absolute;
+  top: 100%; /* justo debajo del header */
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to right bottom, #4291f9, #4291f9, #4291f9, #4291f9, #4291f9, #4d8ef5, #568bf2, #5e88ee, #6c81e5, #787adc, #8173d2, #886cc8);
+  border-bottom-right-radius: 50%;
+  box-sizing: border-box;
+  transition: height 0.3s ease;
+  z-index: 1000;
+}
+
+/* Menú desplegado (vertical) */
+.contenedor-nav-display.activo {
+  height: 300px; /* o lo que necesites, ajustalo si es muy poco o mucho */
+}
+
+/* Lista vertical */
+.nav-list-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-list-display li a {
+  color: white;
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 10px;
+}
+
+.nav-list-display li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Móviles pequeños */
+@media screen and ((min-width:320px) and (max-width:480px)) {
+  .navegacion-principal {
+    display: none;
+  }
+  .menu-navegacion {
+    display: block;
+  }
+  .contenedor-imagen {
+    height: 94px;
+  }
+}
+/* Móviles estándar */
+@media screen and ((min-width:480px) and (max-width:600px) ) {
+  .navegacion-principal {
+    display: none;
+  }
+  .menu-navegacion {
+    display: block;
+  }
+  .contenedor-imagen {
+    height: 100px;
+  }
+}
+
+/* Tablets  (Tablets verticales)*/
+@media screen and ((min-width:600px) and (max-width:768px)) {
+  .navegacion-principal {
+    display: none;
+  }
+  .menu-navegacion {
+    display: block;
+  }
+  .contenedor-imagen {
+    height: 100px;
+  }
+}
+
+/* Tablets / dispositivos medianos (Tablets horizontales o iPads)*/
+@media screen and ((min-width:768px) and (max-width:992px)) {
+  .navegacion-principal {
+    display: none;
+  }
+  .menu-navegacion {
+    display: block;
+  }
+  .contenedor-imagen {
+    height: 110px;
+  }
+}

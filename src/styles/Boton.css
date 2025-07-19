@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.boton-whatsapp {
+    width: 180px;
+    height: 60px;
+    background-color: var(--whatsapp-color);
+    color: white;
+    font-weight: 700;
+    padding: 20px 27px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: Lato, sans-serif;
+}
+
+.boton-whatsapp:hover {
+    background-color: var(--whatsapp-color-hover);
+}
+
+.boton-service {
+    width: 180px;
+    height: 60px;
+    background-color: var(--color-secondary);
+    color: white;
+    font-weight: 700;
+    padding: 20px 27px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: Lato, sans-serif;
+}
+
+.boton-service:hover {
+    background-color: var(--service-color-hover);
+}
+
+.menu-navegacion {
+    padding: 7px 9px;
+    margin-right: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and ((min-width:320px) and (max-width:480px)) {
+    .boton-whatsapp, .boton-service {
+        width: 140px;
+        padding: 7px;
+        font-size: 12px;
+    }
+    
+}

@@ -1,0 +1,574 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contenedor-incio, .contenedor-servicios, .contenedor-quienes-somos, .contenedor-contacto {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.contenedor-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.contenedor-de-imagen-de-electrodeomesticos {
+  height: 300px;
+}
+
+.imagen-de-electrodomesticos {
+  height: 100%;
+}
+
+.titulo, .subtitulo {
+  margin-bottom: 12px;
+  color: #333;
+}
+.palabra-resaltada {
+  color: black;
+}
+
+.contenedor-solicitud-de-servicio{
+  display: flex; 
+  align-items: center;    
+  gap: 3rem;               
+  margin-top: 2rem;
+  position: sticky !important;
+  top: 125px;
+  z-index: 999;
+
+}
+
+.contenedor-banner-horarios{
+  width: 100%;
+  margin-top: 2rem;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
+.banner-horarios {
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-informacion-para-cliente {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+
+}
+
+.tecnicos-matriculados, .reparacion-y-mantenimiento, .garantia-escrita, .repuestos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 14px;
+  align-items: center;
+  flex: 1 ;
+  border: 1px solid #bbb;
+  background-color:#f2ecff;
+  height: 200px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+  cursor: default;
+}
+
+.contenedor-icono {
+  height: 50px;
+  
+}
+
+.tecnicos-matriculados:hover, .reparacion-y-mantenimiento:hover, .garantia-escrita:hover, .repuestos:hover {
+  transform: scale(1.06);
+  transition: transform 0.3s ease;
+}
+
+.contenedor-acerca-del-service{
+  width: 100%;
+  min-height: 600px;
+  display: flex; 
+  flex-direction: row;
+  flex: 1;
+  padding: 60px 30px;
+  background-color: #f2ecff ;
+  border-radius: 12px;
+}
+
+.columna-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+
+  h3, h4 {
+    color: var(--service-color-hover);
+    margin-bottom: 12px;
+  }
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    color: #333;
+    margin-bottom: 12px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+    .logo-instagram {
+      svg {
+        background: radial-gradient(circle at 30% 107%, #feda75 0%, #fa7e1e 40%, #d62976 60%, #962fbf 80%, #4f5bd5 100%);
+        border-radius: 50px;
+        padding: 8px;
+      }
+    }
+  }
+
+}
+
+.columna-imagen {
+  background-color: var(--service-color-hover);
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.contenedor-imagen-service {
+  
+  width: 65%;
+  height: 60%;
+}
+
+.imagen-acerca-service {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+
+/* Móviles pequeños */
+@media screen and ((min-width:320px) and (max-width:480px)) {
+  .contenedor-incio {
+    padding: 120px 10px 30px 10px;
+  }
+  .contenedor-titulo {
+    width: 100%;
+
+    .titulo, .subtitulo {
+      font-size: clamp(14px, calc(10px + 1.25vw), 16px);
+    }
+    .contenedor-de-imagen-de-electrodeomesticos {
+      height: 100%;
+      padding: 0 30px;
+
+      .imagen-electrodomesticos {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .contenedor-solicitud-de-servicio {
+    
+    position: static !important;
+    top: auto;
+    z-index: 1;
+    gap: 0.5rem;
+  }
+
+  .contenedor-banner-horarios {
+    height: 90px;
+    padding: 0 ;
+  }
+  
+  .contenedor-informacion-para-cliente {
+      height: max-content;
+      padding: 0 10px;
+      display: grid;
+      grid-template-areas: 'matriculados reparacion'
+                            'garantia repuestos';
+      grid-template-columns: 50% 50% ;
+      
+      .tecnicos-matriculados {
+        grid-area: matriculados;
+      }
+
+      .reparacion-y-mantenimiento{
+        grid-area: reparacion;
+      }
+
+      .garantia-escrita {
+        grid-area: garantia;
+    
+      }
+
+      .repuestos {
+        grid-area: repuestos;
+      }
+
+      .tecnicos-matriculados, .garantia-escrita, .reparacion-y-mantenimiento, .repuestos {
+        h3 {
+          font-size: clamp(14px, calc(10px + 1.25vw), 16px);
+          margin: 7px 0;
+        }
+        p {
+          font-size:clamp(11px, calc(5px + 1.875vw), 14px);
+        }
+      }
+
+      .tecnicos-matriculados:hover, .garantia-escrita:hover, .reparacion-y-mantenimiento:hover, .repuestos:hover {
+        transform: none;
+      }
+  }
+
+  .contenedor-acerca-del-service {
+    flex-direction: column;
+    width: 90%;
+    padding: 16px 12px;
+
+    .columna-texto {
+      h3, h4  {
+        font-size: clamp(14px, calc(10px + 1.25vw), 16px);
+      }
+      p {
+        font-size: clamp(12px, calc(8px + 1.25vw), 14px);
+      }
+    }
+
+    .columna-imagen {
+      height: 200px;
+    }
+  }
+
+  .lista-redes-sociales {
+    width: 100%;
+    display: flex;
+
+    a svg {
+      height: 45px;
+    }
+  }
+}
+
+/* Móviles estándar */
+@media screen and ((min-width:481px) and (max-width:600px))  {
+  .contenedor-incio {
+    padding: 120px 10px;
+  }
+  .contenedor-titulo {
+    width: 100%;
+
+    .titulo, .subtitulo {
+      font-size: 16px;
+    }
+    .contenedor-de-imagen-de-electrodeomesticos {
+      height: 100%;
+      padding: 0 30px;
+
+      .imagen-electrodomesticos {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .contenedor-solicitud-de-servicio {
+    
+    position: static !important;
+    top: auto;
+    z-index: 1;
+    gap: 0.5rem;
+  }
+
+  .contenedor-banner-horarios {
+    height: 110px;
+    padding: 0 ;
+  }
+  
+  .contenedor-informacion-para-cliente {
+      height: max-content;
+      padding: 0 10px;
+      display: grid;
+      grid-template-areas: 'matriculados reparacion'
+                            'garantia repuestos';
+      grid-template-columns: 50% 50% ;
+      
+      .tecnicos-matriculados {
+        grid-area: matriculados;
+      }
+
+      .reparacion-y-mantenimiento{
+        grid-area: reparacion;
+      }
+
+      .garantia-escrita {
+        grid-area: garantia;
+    
+      }
+
+      .repuestos {
+        grid-area: repuestos;
+      }
+
+      .tecnicos-matriculados, .garantia-escrita, .reparacion-y-mantenimiento, .repuestos {
+        h3 {
+          font-size: 16px;
+          margin: 7px 0;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .tecnicos-matriculados:hover, .garantia-escrita:hover, .reparacion-y-mantenimiento:hover, .repuestos:hover {
+        transform: none;
+      }
+  }
+  .contenedor-acerca-del-service {
+    flex-direction: column;
+    width: 90%;
+    padding: 16px 12px;
+
+    .columna-texto {
+      h3, h4  {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .columna-imagen {
+      height: 200px;
+    }
+  }
+
+  .lista-redes-sociales {
+    width: 100%;
+    display: flex;
+
+    a svg {
+      height: 45px;
+    }
+  }
+}
+
+/* Tablets (Tablets en vertical)*/
+@media screen and ((min-width:601px) and (max-width:768px)) {
+  .contenedor-incio {
+    padding: 120px 10px;
+  }
+  .contenedor-titulo {
+    width: 100%;
+
+    .titulo, .subtitulo {
+      font-size: 16px;
+    }
+    .contenedor-de-imagen-de-electrodeomesticos {
+      height: 100%;
+      padding: 0 30px;
+
+      .imagen-electrodomesticos {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .contenedor-solicitud-de-servicio {
+    
+    position: static !important;
+    top: auto;
+    z-index: 1;
+    gap: 3.5rem;
+  }
+
+  .contenedor-banner-horarios {
+    height: 125px;
+    padding: 0 ;
+  }
+  
+  .contenedor-informacion-para-cliente {
+      height: max-content;
+      padding: 0 10px;
+      display: grid;
+      grid-template-areas: 'matriculados reparacion'
+                            'garantia repuestos';
+      grid-template-columns: 50% 50% ;
+      
+      .tecnicos-matriculados {
+        grid-area: matriculados;
+      }
+
+      .reparacion-y-mantenimiento{
+        grid-area: reparacion;
+      }
+
+      .garantia-escrita {
+        grid-area: garantia;
+    
+      }
+
+      .repuestos {
+        grid-area: repuestos;
+      }
+
+      .tecnicos-matriculados, .garantia-escrita, .reparacion-y-mantenimiento, .repuestos {
+        h3 {
+          font-size: 16px;
+          margin: 7px 0;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .tecnicos-matriculados:hover, .garantia-escrita:hover, .reparacion-y-mantenimiento:hover, .repuestos:hover {
+        transform: none;
+      }
+  }
+  .contenedor-acerca-del-service {
+    flex-direction: column;
+    width: 90%;
+    padding: 16px 12px;
+
+    .columna-texto {
+      h3, h4  {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .columna-imagen {
+      height: 300px;
+    }
+  }
+
+  .lista-redes-sociales {
+    width: 100%;
+    display: flex;
+
+    a svg {
+      height: 45px;
+    }
+  }
+}
+
+/* Tablets / dispositivos medianos (Tablets horizontales o iPads)*/
+@media screen and ((min-width:769px) and (max-width:992px)) {
+  .contenedor-incio {
+    padding: 120px 10px 30px 10px;
+  }
+
+  .contenedor-solicitud-de-servicio {
+    position: static;
+    z-index: 1;
+  }
+  .contenedor-banner-horarios {
+    height: 150px;
+  }
+
+  .contenedor-informacion-para-cliente {
+    height: 300px;
+
+    .tecnicos-matriculados, .reparacion-y-mantenimiento, .garantia-escrita, .repuestos {
+      justify-content: flex-start;
+      height: 250px;  
+      gap: 12px;
+    }
+
+    .tecnicos-matriculados:hover, .reparacion-y-mantenimiento:hover, .garantia-escrita:hover, .repuestos:hover {
+      transform: none;
+      
+    }
+  }
+
+  .contenedor-acerca-del-service {
+    flex-direction: column;
+
+    .columna-imagen {
+      height: 350px;
+    }
+  }
+
+  .lista-redes-sociales {
+    width: 100%;
+    display: flex;
+
+    a svg {
+      height: 45px;
+    }
+  }
+}
+
+/* Laptops / pantallas medianas */
+@media screen and ((min-width:993px) and (max-width:1200px)) {
+  .contenedor-incio {
+    padding: 80px 67px 30px 67px;
+  }
+
+  .contenedor-banner-horarios {
+    height: 170px;
+  }
+
+    .contenedor-informacion-para-cliente {
+    height: 300px;
+
+    .tecnicos-matriculados, .reparacion-y-mantenimiento, .garantia-escrita, .repuestos {
+      justify-content: flex-start;
+      height: 250px;  
+      gap: 12px;
+    }
+
+
+  }
+
+  .contenedor-acerca-del-service {
+    flex-direction: column;
+
+    .columna-imagen {
+      height: 350px;
+    }
+  }
+
+
+  .contenedor-acerca-del-service {
+    flex-direction: column;
+
+    .columna-imagen {
+      height: 350px;
+    }
+  }
+
+    .lista-redes-sociales {
+    width: 100%;
+    display: flex;
+
+    a svg {
+      height: 50px;
+    }
+  }
+}

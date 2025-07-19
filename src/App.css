@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #f3f9ff;
+  --color-secondary: #4291f9;
+  --whatsapp-color : #25d366;
+  --whatsapp-color-hover: #075e54;
+  --service-color-hover: #465e8f;
+
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /*Esto hace que el main ocupe el espacio disponible y empuje al footer hacia abajo. */
+  padding: 120px;
+
+}
+
+@media screen and (max-width:992px) {
+  main {
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and ((min-width:993px) and (max-width:1200px)) {
+  main {
+    padding: 60px;
+    
+  }
+}

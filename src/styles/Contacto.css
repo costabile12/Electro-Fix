@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contenedor-otras-formas-de-contacto {
+    padding-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contacto-whatsapp, .contacto-tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 30px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    height: 150px;
+    width: 350px;
+
+    h3 {
+        font-family: Lato,sans-serif;
+        
+    }
+
+    p {
+        font-family: Lato,sans-serif;
+        font-size: 16px;
+    }
+}
+
+.contacto-whatsapp {
+    background-color: var(--whatsapp-color);
+    
+}
+
+.contacto-tienda {
+    background-color: var(--color-secondary);
+}
+
+@media screen and  (max-width:768px) {
+    .contenedor-contacto {
+        padding: 120px 10px 30px 10px;
+    }
+    .formulario {
+        padding: 0 10px;
+        width: 100%;
+    }
+    .contenedor-otras-formas-de-contacto {
+        gap: 7px;
+        .contacto-tienda, .contacto-whatsapp {
+
+            .contenedor-texto {
+                h3, p {
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+}

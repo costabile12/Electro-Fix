@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.pie-de-pagina {
+  background-image: linear-gradient(to bottom, #4291f9, #5e88ee, #707ee2, #7e75d5, #886cc8); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  width: 100%;
+}
+
+.contenedor-logo{
+  height: 120px;
+  filter: drop-shadow(0 0 2px black);
+}
+
+.img-logo{
+  height: 100%;
+}
+
+.servicio-de-garantia {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.texto-garantia {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: italic;
+  text-shadow: 0 0 5px black;
+}
+
+.lista-de-marcas {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.contenedor-derechos-reservados {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 2px solid white;
+}
+.texto-derecho-reservado{
+  margin-top: 12px;
+  text-shadow: 0 0 5px black;
+}
+
+@media screen and (max-width:768px) {
+
+  .contenedor-logo {
+    height: 90px;
+  }
+  .texto-garantia {
+    font-size: 12px;
+    margin: 7px 0;
+  }
+  .lista-de-marcas {
+    gap: 40px;
+
+    .contenedor-imagen-marca {
+      height: 40px;
+      width: 75px;
+    }
+  }
+  .contenedor-derechos-reservados {
+    p {
+      font-size: 12px;
+    }
+  }
+}

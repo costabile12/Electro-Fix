@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.contenedor-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding-top: 20px;
+}
+
+.contenedor-flex-servicios {
+    display: flex;
+    flex: 1 1;
+    width: 100%;
+    
+    
+}
+
+.contenedor-reparacion-de-electrodomesticos {
+    padding: 20px 30px;
+    background-color: #f2ecff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 100%;
+    
+    h2 {
+        text-align: center;
+    }
+
+    h4 {
+        color: var(--service-color-hover);
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.lista-de-electrodomesticos {
+    list-style: none;
+    padding-left: 12px;
+    margin-top: 7px;
+
+
+
+    li {
+        margin-bottom: 7px;
+
+        p {
+            margin-left: 7px;
+        }
+    }
+}
+
+.contenedor-mantenimiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    padding: 20px 0 0 30px;
+    background-color: var(--service-color-hover);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.lista-de-servicios-de-mantenimiento {
+    list-style: none;
+    margin-top: 7px;
+
+    li {
+        margin-bottom: 18px;
+    }
+}
+
+.contenedor-imagen-servicios {
+    display: flex;
+    justify-content: right;
+    height: 250px;
+}
+
+.imagen-servicios {
+    height: 100%;
+    border-bottom-right-radius: 8px;
+    border-top: 8px double white;
+    border-left: 8px double white;
+}
+
+
+
+@media screen and ((min-width:320px) and (max-width:480px)) {
+    .contenedor-servicios {
+        padding: 120px 10px 30px 10px;
+    }
+    .contenedor-titulo {
+        titulo, subtitulo {
+            font-size: clamp(0.875rem, 0.625rem + 1.25vw, 1rem);
+        }
+    }
+
+    .contenedor-flex-servicios {
+        flex-direction: column;
+        padding: 0 10px;
+        
+    }
+    .contenedor-reparacion-de-electrodomesticos{
+
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+        h2 {
+            font-size: clamp(1rem, 0.75rem + 1.25vw, 1.125rem);
+        }
+
+        h4, p {
+            font-size: clamp(0.75rem, 0.5rem + 1.25vw, 0.875rem);
+        }
+    }
+    
+    .contenedor-mantenimiento {
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        .contenedor-texto-mantenimiento{
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .contenedor-imagen-servicios {
+            height: 150px;
+        }
+    }    
+}
+
+@media screen and ((min-width:481px) and (max-width:768px)) {
+    .contenedor-servicios {
+        padding: 120px 10px 30px 10px;
+    }
+
+    .contenedor-flex-servicios {
+        flex-direction: column;
+        padding: 0 10px;
+        
+    }
+    .contenedor-reparacion-de-electrodomesticos{
+
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+        h2 {
+            font-size: 18px;
+        }
+
+        h4, p {
+            font-size: 14px;
+        }
+    }
+    
+    .contenedor-mantenimiento {
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
+        .contenedor-texto-mantenimiento{
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .contenedor-imagen-servicios {
+            height: 180px;
+        }
+    }
+
+    
+}
+
+@media screen and ((min-width:769px) and (max-width:992px)) {
+    .contenedor-servicios {
+        padding: 120px 10px 30px 10px;
+    }
+
+    .contenedor-flex-servicios {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+        .contenedor-reparacion-de-electrodomesticos{
+
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+    }
+    
+    .contenedor-mantenimiento {
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        
+    }
+
+}
+
+@media screen and ((min-width:993px) and (max-width:1200px)) {
+    .contenedor-servicios {
+        padding: 80px 67px 30px 67px;
+    }
+    .contenedor-flex-servicios {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
+        .contenedor-reparacion-de-electrodomesticos{
+
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+
+    }
+    
+    .contenedor-mantenimiento {
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        
+    }
+}
