@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Proyecto-Electro-Fix/static/css/main.9b5742d4.css",
+    "main.js": "/Proyecto-Electro-Fix/static/js/main.d43e45be.js",
+    "static/media/servicios.jpg": "/Proyecto-Electro-Fix/static/media/servicios.e36ddf59f079ba5571f9.jpg",
+    "static/media/acerca-del-service.jpg": "/Proyecto-Electro-Fix/static/media/acerca-del-service.1a26e59ce048cc578e73.jpg",
+    "static/media/taller-reparacion.jpg": "/Proyecto-Electro-Fix/static/media/taller-reparacion.40dc89b99f706684f328.jpg",
+    "static/media/imagen-taller-2.jpg": "/Proyecto-Electro-Fix/static/media/imagen-taller-2.80b711c2ae8b228b1216.jpg",
+    "static/media/logo.png": "/Proyecto-Electro-Fix/static/media/logo.f8c4dd37bd6b28392b87.png",
+    "static/media/banner.png": "/Proyecto-Electro-Fix/static/media/banner.8d417620eb1c68cd6626.png",
+    "static/media/electrodomesticos.png": "/Proyecto-Electro-Fix/static/media/electrodomesticos.c207e4d7b514adb9bc35.png",
+    "index.html": "/Proyecto-Electro-Fix/index.html",
+    "main.9b5742d4.css.map": "/Proyecto-Electro-Fix/static/css/main.9b5742d4.css.map",
+    "main.d43e45be.js.map": "/Proyecto-Electro-Fix/static/js/main.d43e45be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b5742d4.css",
+    "static/js/main.d43e45be.js"
+  ]
+}
