@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Electro-Fix/static/css/main.9b5742d4.css",
-    "main.js": "/Electro-Fix/static/js/main.169436b9.js",
+    "main.js": "/Electro-Fix/static/js/main.54e7f77d.js",
     "static/media/servicios.jpg": "/Electro-Fix/static/media/servicios.e36ddf59f079ba5571f9.jpg",
     "static/media/acerca-del-service.jpg": "/Electro-Fix/static/media/acerca-del-service.1a26e59ce048cc578e73.jpg",
     "static/media/taller-reparacion.jpg": "/Electro-Fix/static/media/taller-reparacion.40dc89b99f706684f328.jpg",
@@ -11,10 +11,10 @@
     "static/media/electrodomesticos.png": "/Electro-Fix/static/media/electrodomesticos.c207e4d7b514adb9bc35.png",
     "index.html": "/Electro-Fix/index.html",
     "main.9b5742d4.css.map": "/Electro-Fix/static/css/main.9b5742d4.css.map",
-    "main.169436b9.js.map": "/Electro-Fix/static/js/main.169436b9.js.map"
+    "main.54e7f77d.js.map": "/Electro-Fix/static/js/main.54e7f77d.js.map"
   },
   "entrypoints": [
     "static/css/main.9b5742d4.css",
-    "static/js/main.169436b9.js"
+    "static/js/main.54e7f77d.js"
   ]
 }
