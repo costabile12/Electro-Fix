@@ -36,6 +36,35 @@
   text-shadow: 0 0 5px black;
 }
 
+.marquee-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: scroll-left 15s linear infinite;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Opcional: margen entre marcas */
+.marquee-content li {
+  margin-right: 1rem;
+}
+
 .lista-de-marcas {
   list-style: none;
   display: flex;
@@ -66,11 +95,11 @@
     margin: 7px 0;
   }
   .lista-de-marcas {
-    gap: 40px;
+    
 
     .contenedor-imagen-marca {
       height: 40px;
-      width: 75px;
+      width: 65px;
     }
   }
   .contenedor-derechos-reservados {

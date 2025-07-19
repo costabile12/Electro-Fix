@@ -19,35 +19,38 @@ function Footer() {
             <section className="servicio-de-garantia">
                 <p className="texto-garantia">Contamos con servicio de garantía de las siguientes marcas:</p>
                 
-                <marquee behavior="scroll" direction="left">
-                    <ul className="lista-de-marcas">
-                        <li>
-                            <MarcaElectrodomestico 
-                            className="marca logo-liliana"
-                            logoDeMarca={LogoLiliana}
-                            nombreDeMarca="Liliana"/>
-                        </li>
-                        <li>
-                            <MarcaElectrodomestico 
-                            className="marca logo-ultra-comb"
-                            logoDeMarca={LogoUltraComb}
-                            nombreDeMarca="Ultra-Comb"/>
-                        </li>
-                        <li>
-                            <MarcaElectrodomestico 
-                            className="marca logo-yelmo"
-                            logoDeMarca={LogoYelmo}
-                            nombreDeMarca="Yelmo"/>
-                        </li>
-                        <li>
-                            <MarcaElectrodomestico 
-                            className="marca logo-philips"
-                            logoDeMarca={LogoPhilips}
-                            nombreDeMarca="Philips"/>
-                        </li>                        
-
-                    </ul>
-                </marquee>
+                <div className="marquee-wrapper">
+                <ul className="lista-de-marcas marquee-content">
+                    <li>
+                    <MarcaElectrodomestico 
+                        className="marca logo-liliana"
+                        logoDeMarca={LogoLiliana}
+                        nombreDeMarca="Liliana"
+                    />
+                    </li>
+                    <li>
+                    <MarcaElectrodomestico 
+                        className="marca logo-ultra-comb"
+                        logoDeMarca={LogoUltraComb}
+                        nombreDeMarca="Ultra-Comb"
+                    />
+                    </li>
+                    <li>
+                    <MarcaElectrodomestico 
+                        className="marca logo-yelmo"
+                        logoDeMarca={LogoYelmo}
+                        nombreDeMarca="Yelmo"
+                    />
+                    </li>
+                    <li>
+                    <MarcaElectrodomestico 
+                        className="marca logo-philips"
+                        logoDeMarca={LogoPhilips}
+                        nombreDeMarca="Philips"
+                    />
+                    </li>
+                </ul>
+                </div>
                 
                 <div className="contenedor-derechos-reservados">
                     <p className="texto-derecho-reservado">

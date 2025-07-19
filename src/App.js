@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -12,7 +12,7 @@ import Contacto from "./pages/contacto.js";
 
 function App() {
   return (
-    <HashRouter basename="/Electro-Fix">
+    <BrowserRouter basename="/Electro-Fix">
       <div className="App">
         
           <Header />
@@ -29,7 +29,7 @@ function App() {
           <Footer /> 
           
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
