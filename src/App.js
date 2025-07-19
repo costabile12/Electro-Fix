@@ -12,7 +12,7 @@ import Contacto from "./pages/contacto.js";
 
 function App() {
   return (
-    <BrowserRouter basename="/Proyecto-Electro-Fix">
+    <BrowserRouter basename="/Electro-Fix">
       <div className="App">
         
           <Header />
