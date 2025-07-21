@@ -156,3 +156,15 @@
     height: 110px;
   }
 }
+
+@media screen and (min-width:993px) {
+  .menu-navegacion {
+    display: none;
+  }
+  /* Menú desplegado (vertical) */
+  .contenedor-nav-display.activo {
+    display: none; /* o lo que necesites, ajustalo si es muy poco o mucho */
+  } 
+
+
+}
